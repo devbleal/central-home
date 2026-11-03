@@ -64,6 +64,20 @@ h1 em{font-style:normal;color:var(--accent)}
   .steps{margin-top:14px;grid-template-columns:1fr}
   .port,.step::before{display:none}
 }
+/* Notion embed: wide but only ~340px tall */
+@media (min-width:761px) and (max-height:480px){
+  .wrap{padding-block:14px}
+  h1{font-size:32px;margin-top:2px}
+  .day{padding:3px 0}
+  .flow{margin-top:14px}
+  .trigger{padding:12px 16px}
+  .focus{font-size:20px;margin-top:4px}
+  .hint{display:none}
+  .wires{min-height:150px}
+  .steps{gap:10px}
+  .step{padding:10px 14px}
+  .foot{margin-top:12px}
+}
 @media (prefers-reduced-motion:reduce){.step{transition:none}}
 </style>
 
